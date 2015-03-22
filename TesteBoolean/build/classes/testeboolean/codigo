@@ -1,0 +1,16 @@
+       //Teste da JUEL Java Unified Expression*************
+//        ExpressionFactory factory = new de.odysseus.el.ExpressionFactoryImpl();
+//        de.odysseus.el.util.SimpleContext context = new de.odysseus.el.util.SimpleContext();
+//        context.setFunction("math", "max", Math.class.getMethod("max", int.class, int.class));
+//        context.setVariable("foo", factory.createValueExpression(0, int.class));
+//        ValueExpression e = factory.createValueExpression(context, "${math:max(foo,bar)}", int.class);
+//        factory.createValueExpression(context, "${bar}", int.class).setValue(context, 1);
+//        System.out.println(e.getValue(context));
+        ExpressionFactoryImpl factory2 = new ExpressionFactoryImpl();
+        SimpleContext context = new SimpleContext(); // more on this here...       
+        TreeValueExpression e = factory2.createValueExpression(context, "${((field.getAccessFlags() && (IAccessFlags.ACC_STATIC || IAccessFlags.ACC_FINAL)) == (IAccessFlags.ACC_STATIC || IAccessFlags.ACC_FINAL))}", Object.class);
+        PrintWriter out = new PrintWriter(new FileWriter("log"));        
+        e.dump(out);
+        out.flush();
+        //Problema: não trabalha com todos os operadore | e &. Não dá uma lista de variáveis.
+        //JUEL*************************************************

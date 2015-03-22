@@ -1,0 +1,7 @@
+Teste número 1.
+
+Ao rodar a entrada "apache-ant-1.9.3" a seguinte linha foi checada como contendo 4 condições: if ('$' == s.charAt(index) && '$' == s.charAt(++index)) {
+Causa do erro: O '$' usado como separador da string é usado no texto.
+Soluções: 
+1) encontrar um parcer melhor.
+2) analisar caracter por caracter a linha.

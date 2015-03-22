@@ -1,0 +1,106 @@
+*********
+FILE:/home/alexandre/NetBeansProjects/newtriangle/src/newtriangle/Newtriangle.java
+	 Class Newtriangle
+		 Method main
+		 Method scope  17 62
+			For start line 28 end line 30 start column 9
+			For start line 31 end line 60 start column 9
+			If start line 44 end line 59 start column 13
+			Expression (tr.isTriangle(a, b, c))
+			Condition 1
+				(false) = false  and  (true) =  true
+			If start line 45 end line 56 start column 17
+			Expression (tr.isEquilateral(a, b, c))
+			Condition 1
+				(false) = false  and  (true) =  true
+			If start line 49 end line 55 start column 21
+			Expression (tr.isIsosceles(a, b, c))
+			Condition 1
+				(false) = false  and  (true) =  true
+			If start line 52 end line 54 start column 25
+			Expression (tr.isScalene(a, b, c))
+			Condition 1
+				(false) = false  and  (true) =  true
+*********
+FILE:/home/alexandre/NetBeansProjects/newtriangle/src/newtriangle/Triangle.java
+	 Class Triangle
+		 Method isEquilateral
+		 Method scope  11 18
+			If start line 13 end line 17 start column 9
+			Expression ((a == b) && (a == c) && (b == c))
+			Condition 1
+				((false)&&(true)&&(true)) = false  and  ((true)&&(true)&&(true)) =  true
+			Condition 2
+				((true)&&(false)&&(true)) = false  and  ((true)&&(true)&&(true)) =  true
+			Condition 3
+				((true)&&(true)&&(false)) = false  and  ((true)&&(true)&&(true)) =  true
+		 Method isIsosceles
+		 Method scope  20 27
+			If start line 22 end line 26 start column 9
+			Expression (((a == b) && (a != c)) || ((a == c) && (a != b)) || ((b == c) && (a != b)))
+			Condition 1
+				(((false)&&(true))||((false)&&(false))||((false)&&(false))) = false  and  (((true)&&(true))||((false)&&(false))||((false)&&(false))) =  true
+				(((false)&&(true))||((false)&&(false))||((true)&&(false))) = false  and  (((true)&&(true))||((false)&&(false))||((true)&&(false))) =  true
+				(((false)&&(true))||((false)&&(true))||((false)&&(true))) = false  and  (((true)&&(true))||((false)&&(true))||((false)&&(true))) =  true
+				(((false)&&(true))||((true)&&(false))||((false)&&(false))) = false  and  (((true)&&(true))||((true)&&(false))||((false)&&(false))) =  true
+				(((false)&&(true))||((true)&&(false))||((true)&&(false))) = false  and  (((true)&&(true))||((true)&&(false))||((true)&&(false))) =  true
+			Condition 2
+				(((true)&&(false))||((false)&&(false))||((false)&&(false))) = false  and  (((true)&&(true))||((false)&&(false))||((false)&&(false))) =  true
+				(((true)&&(false))||((false)&&(false))||((true)&&(false))) = false  and  (((true)&&(true))||((false)&&(false))||((true)&&(false))) =  true
+				(((true)&&(false))||((false)&&(true))||((false)&&(true))) = false  and  (((true)&&(true))||((false)&&(true))||((false)&&(true))) =  true
+				(((true)&&(false))||((true)&&(false))||((false)&&(false))) = false  and  (((true)&&(true))||((true)&&(false))||((false)&&(false))) =  true
+				(((true)&&(false))||((true)&&(false))||((true)&&(false))) = false  and  (((true)&&(true))||((true)&&(false))||((true)&&(false))) =  true
+			Condition 3
+				(((false)&&(false))||((false)&&(true))||((false)&&(true))) = false  and  (((false)&&(false))||((true)&&(true))||((false)&&(true))) =  true
+				(((false)&&(true))||((false)&&(true))||((false)&&(true))) = false  and  (((false)&&(true))||((true)&&(true))||((false)&&(true))) =  true
+				(((true)&&(false))||((false)&&(true))||((false)&&(true))) = false  and  (((true)&&(false))||((true)&&(true))||((false)&&(true))) =  true
+			Condition 4
+				(((false)&&(false))||((false)&&(false))||((true)&&(false))) = false  and  (((false)&&(false))||((false)&&(true))||((true)&&(true))) =  true
+				r2= I
+				(((false)&&(false))||((true)&&(false))||((false)&&(false))) = false  and  (((false)&&(false))||((true)&&(true))||((false)&&(true))) =  true
+				r1= I
+				(((false)&&(false))||((true)&&(false))||((true)&&(false))) = false  and  (((false)&&(false))||((true)&&(true))||((true)&&(true))) =  true
+				r1= I r2= X
+				(((false)&&(true))||((false)&&(false))||((true)&&(false))) = false  and  (((false)&&(true))||((false)&&(true))||((true)&&(true))) =  true
+				r2= I
+				(((false)&&(true))||((true)&&(false))||((false)&&(false))) = false  and  (((false)&&(true))||((true)&&(true))||((false)&&(true))) =  true
+				r1= I
+				(((false)&&(true))||((true)&&(false))||((true)&&(false))) = false  and  (((false)&&(true))||((true)&&(true))||((true)&&(true))) =  true
+				r1= I r2= X
+				(((true)&&(false))||((false)&&(false))||((true)&&(false))) = false  and  (((true)&&(false))||((false)&&(true))||((true)&&(true))) =  true
+				r2= I
+				(((true)&&(false))||((true)&&(false))||((false)&&(false))) = false  and  (((true)&&(false))||((true)&&(true))||((false)&&(true))) =  true
+				r1= I
+				(((true)&&(false))||((true)&&(false))||((true)&&(false))) = false  and  (((true)&&(false))||((true)&&(true))||((true)&&(true))) =  true
+				r1= I r2= X
+			Condition 5
+				(((false)&&(false))||((false)&&(true))||((false)&&(true))) = false  and  (((false)&&(false))||((false)&&(true))||((true)&&(true))) =  true
+				(((false)&&(true))||((false)&&(true))||((false)&&(true))) = false  and  (((false)&&(true))||((false)&&(true))||((true)&&(true))) =  true
+				(((true)&&(false))||((false)&&(true))||((false)&&(true))) = false  and  (((true)&&(false))||((false)&&(true))||((true)&&(true))) =  true
+		 Method isScalene
+		 Method scope  29 36
+			If start line 31 end line 35 start column 14
+			Expression ((a != b) && (a != c) && (b != c))
+			Condition 1
+				((false)&&(true)&&(true)) = false  and  ((true)&&(true)&&(true)) =  true
+			Condition 2
+				((true)&&(false)&&(true)) = false  and  ((true)&&(true)&&(true)) =  true
+			Condition 3
+				((true)&&(true)&&(false)) = false  and  ((true)&&(true)&&(true)) =  true
+		 Method isTriangle
+		 Method scope  38 58
+			If start line 40 end line 56 start column 18
+			Expression (a + b > c)
+			Condition 1
+				(false) = false  and  (true) =  true
+			If start line 42 end line 52 start column 13
+			Expression (a + c > b)
+			Condition 1
+				(false) = false  and  (true) =  true
+			If start line 44 end line 48 start column 17
+			Expression (b + c > a)
+			Condition 1
+				(false) = false  and  (true) =  true
+*********
+FILE:/home/alexandre/NetBeansProjects/newtriangle/src/newtriangle/Triangle.java
+	 Class test

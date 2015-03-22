@@ -1,0 +1,18 @@
+Hi,
+you can register an error handler of your own. The easiest is to just extend DefaultErrorHandler:
+
+class MyErrorHandler extends DefaultErrorHandler() {
+public void modelUpdated(EventObject event) { isUpdating = false; }
+}
+MyErrorHandler meh = new MyErrorHandler();
+meh.setErrorThreshold(... desired value, in your case probably very high ...)
+serviceConfiguraiton.getProjectSettings().setErrorHandler(meh);
+
+Of course, much more sophisticated error handling is possible.
+
+Alternatively, add the referenced libraries to the path.
+
+Note that in the past, Recoder quite often terminated with a NullPointerException in case of unresolved references (despite a custom error handler). Those are bugs and should be reported.
+
+Regards,
+Tobias

@@ -1,0 +1,7 @@
+((field.getAccessFlags() & (IAccessFlags.ACC_STATIC | IAccessFlags.ACC_FINAL)) == (IAccessFlags.ACC_STATIC | IAccessFlags.ACC_FINAL))
+
+((IDENTITY_OPTIMIZATION && (entryKey == key)) || ((keyHashCode == entryKey.hashCode()) && key.equals(entryKey)))
+
+(namespace != ABSTRACT_EXCEPTION && namespace != ABSTACT_RUNTIME_EXCEPTION && namespace != THROWABLE && namespace != null)
+
+(((modifiers & ACC_PRIVATE) == 0) || expression (((modifiers & ACC_PRIVATE) == 0) || ((modifiers & (ACC_STATIC | ACC_TRANSIENT)) == 0))

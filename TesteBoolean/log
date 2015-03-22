@@ -1,0 +1,41 @@
++- ${...}
+   |
+   +- (...)
+      |
+      +- '=='
+         |
+         +- (...)
+         |  |
+         |  +- '&&'
+         |     |
+         |     +- <method>
+         |     |  |
+         |     |  +- . getAccessFlags
+         |     |  |  |
+         |     |  |  +- field
+         |     |  |
+         |     |  +- (...)
+         |     |
+         |     +- (...)
+         |        |
+         |        +- '||'
+         |           |
+         |           +- . ACC_STATIC
+         |           |  |
+         |           |  +- IAccessFlags
+         |           |
+         |           +- . ACC_FINAL
+         |              |
+         |              +- IAccessFlags
+         |
+         +- (...)
+            |
+            +- '||'
+               |
+               +- . ACC_STATIC
+               |  |
+               |  +- IAccessFlags
+               |
+               +- . ACC_FINAL
+                  |
+                  +- IAccessFlags

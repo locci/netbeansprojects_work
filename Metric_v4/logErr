@@ -1,0 +1,30 @@
+/home/alexandre/project_file_metric/res_v4/MckoiDDB-1.3/src/main/java/com/mckoi/network/DefaultManagerServer.java
+EnhancedFor
+ERROR - More then one line
+601
+*************************
+/home/alexandre/project_file_metric/res_v4/MckoiDDB-1.3/src/main/java/com/mckoi/network/LocalFileSystemRootServer.java
+If
+ERROR - More then one line
+1817
+*************************
+/home/alexandre/project_file_metric/res_v4/MckoiDDB-1.3/src/main/java/com/mckoi/network/LocalFileSystemManagerServer.java
+While
+ERROR - More then one line
+264
+*************************
+/home/alexandre/project_file_metric/res_v4/MckoiDDB-1.3/src/main/java/com/mckoi/odb/ODBClassCreator.java
+EnhancedFor
+ERROR - More then one line
+143
+*************************
+/home/alexandre/project_file_metric/res_v4/MckoiDDB-1.3/src/main/java/com/mckoi/odb/ODBTransaction.java
+If
+ERROR - More then one line
+1161
+*************************
+/home/alexandre/project_file_metric/res_v4/MckoiDDB-1.3/src/main/java/com/mckoi/sdb/SDBTable.java
+While
+ERROR - More then one line
+299
+*************************

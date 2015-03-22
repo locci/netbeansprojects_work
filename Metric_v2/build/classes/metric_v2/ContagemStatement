@@ -1,0 +1,59 @@
+Relatório: Contagem de Statement
+
+Para contar os número de statement eu utilizo a Classe Statement do Recoder (ver código abaixo).
+
+ if (pe instanceof Statement && !(pe instanceof StatementBlock) /*&& !(pe instanceof StatementKit)*/){
+                
+                ListMetric.statement ++;
+//              System.out.println(ListMetric.statement + " >>>> " + pe.toSource());
+                        
+}
+
+Eu não considero Blocos como statement.
+
+Exemplo de como recoder conta:
+
+if (expre){ 
+
+}
+
+Contagem if 1.
+
+if((expre)){
+
+}
+
+Contagem if 1 e (...) 2
+
+for(int i = 0; i < 10; i++){
+
+}
+
+Contagem for 1, int i = 0; 1, i++ 1
+
+Importante
+
+while (a){
+
+}
+
+while 1, mas
+
+while ((a)){
+
+}
+
+while 1 e (a) 1.
+
+() contam como uma instrução.
+
+Exception
+
+try{
+
+
+} catch (e) {
+
+}
+
+1 statement.

@@ -1,0 +1,16 @@
+Uso do recoder:
+Posso usar o recoder para identificar a posição inicial de um brance (linha e coluna). Problema, a coluna deve é definida 
+em caracteres isso implica que se o progrmador usou tab para identar o recoder dá referência errada.(Pensar solução)
+
+Implementação:
+
+Idéia: crio uma lista na qual armazeno as seguinte string:
+
+0 - nome do arquivo
+1 - nome da classe 
+2 - método 
+3 - inic_fim método
+4 - tipo de branch
+5 - linha inicial_linha final
+6 - coluna inicial_coluna final
+7 - expressão
